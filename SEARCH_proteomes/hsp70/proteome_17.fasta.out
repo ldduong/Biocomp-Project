@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ../BUILD_hsp70.hmm
+# target sequence database:        proteome_17.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ALIGN_hsp70  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+  ------ inclusion threshold ------
+       0.06    8.2  17.2      0.065    8.1  17.2    1.0  1  WP_012941020.1  ATP synthase archaeal subunit H 
+       0.17    6.8   9.7       0.19    6.6   9.7    1.1  1  WP_012939454.1  hypothetical protein 
+       0.51    5.2  16.2       0.65    4.8  16.2    1.1  1  WP_012941024.1  V-type ATP synthase subunit E 
+        1.3    3.8  10.3        1.5    3.6  10.3    1.0  1  WP_012766394.1  hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_012941020.1  ATP synthase archaeal subunit H 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1  17.2   0.00015     0.065     484     568 ..       5      95 ..       1     105 [. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00015
+     ALIGN_hsp70 484 eiermkkdaekhaeed.kkrkee.ie....vrneaesliqaaeklleeaedkvdedqkekveaaiedlkealeekdaeeikakt.ealseev 568
+                     e+ ++ ++ae   eed +k kee  e    +++ea+ +i+ aek  e+ + ++ e+ k+++e++ +++k+ l+ k++ ei++k   +++++v
+  WP_012941020.1   5 EVLEKIREAELKVEEDiAKAKEEaKEiinkAKDEAKKIIEDAEKEAEKIKAEILEKAKAEIEKEKQEVKNSLS-KQISEIESKGkSNMQNAV 95 
+                     5666778888888888423333313411123456677888899999999999999999999999999999998.667777766414455555 PP
+
+>> WP_012939454.1  hypothetical protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   9.7   0.00042      0.19     513     590 ..       4      84 ..       1     115 [. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.00042
+     ALIGN_hsp70 513 esliqaaeklleeaedkvdedqkekveaaiedlkealee...kdaeeikaktealseevqeigtklyqkaaaeeaaaaega 590
+                     + l+++ ek l e+e +v+e +k   ++a+edlk+ l e   kd ++i+ak+ +ls++v+ + +++   +++ ++ +++++
+  WP_012939454.1   4 DILLERLEKKLAEKEKEVEELRKMLSSKALEDLKNELREefkKDLKAIEAKVAELSKSVEALMNEVLFIKSEIKSYEKKET 84 
+                     5678899***********999999999999**9999986233577899999999999999988776554443333322222 PP
+
+>> WP_012941024.1  V-type ATP synthase subunit E 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8  16.2    0.0015      0.65     478     581 ..      22     125 ..       4     142 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.0015
+     ALIGN_hsp70 478 aklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklle.eaedkvdedqkekveaaiedlkealeekdaeeikaktealseevqei 571
+                     ++ +++e er+  +a++ aee  + k + +++ eae l ++  + ++ e + ++ ++qke ++a  e lk+ ++e d+e+ k+ +e+l ++  + 
+  WP_012941024.1  22 KEEAEKEAERIIAEAKAKAEEIIE-KAKEDAEKEAERLRRQEISSVKlEMKREMLNKQKEILDAVFEALKQRIKEMDIETRKKIIESLLKNYAQP 115
+                     111222223333333332222211.1111222333333333333333344445555555555555555555555555555555555555555555 PP
+
+     ALIGN_hsp70 572 gtklyqkaaa 581
+                     g  +y ++++
+  WP_012941024.1 116 GMVVYSNKND 125
+                     5555554443 PP
+
+>> WP_012766394.1  hypothetical protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6  10.3    0.0034       1.5     493     567 ..      11      88 ..       2     101 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.0034
+     ALIGN_hsp70 493 ekhaeedkkrkeeievrneaesliqaae...klleeaedkvdedqkekveaaiedlkealeekdaeeikaktealsee 567
+                     e+  ee +++ eei+ ++ + s++ +ae   k +ee + kv e  +e + +++ dl e  e+++  + ++k e+l + 
+  WP_012766394.1  11 EEVVEERRQEEEEIDEEEATGSALLTAEefdKKIEEIKAKVREAVQEALANTLADLLEKEEKEEKRKDETKAEELPKC 88 
+                     556788899999999998888888888733356888888888888888888888888888888877778888888665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       1784  (476344 residues searched)
+Passed MSV filter:                       111  (0.0622197); expected 35.7 (0.02)
+Passed bias filter:                       59  (0.0330717); expected 35.7 (0.02)
+Passed Vit filter:                         9  (0.00504484); expected 1.8 (0.001)
+Passed Fwd filter:                         4  (0.00224215); expected 0.0 (1e-05)
+Initial search space (Z):               1784  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 8041.37
+//
+[ok]

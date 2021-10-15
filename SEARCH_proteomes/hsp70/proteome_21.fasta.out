@@ -1,0 +1,146 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ../BUILD_hsp70.hmm
+# target sequence database:        proteome_21.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ALIGN_hsp70  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   5.6e-285  944.1  20.2   1.6e-250  830.2  15.2    2.0  2  NP_951095.1  molecular chaperone DnaK 
+    1.7e-12   44.0   3.4    3.7e-12   42.9   3.4    1.8  1  NP_953138.1  rod shape-determining protein MreB 
+    9.3e-07   25.1   0.3    1.4e-06   24.5   0.3    1.2  1  NP_951790.1  rod shape-determining protein MreB 
+     0.0094   11.8   0.7      0.012   11.5   0.7    1.1  1  NP_951094.1  heat shock protein GrpE 
+  ------ inclusion threshold ------
+       0.67    5.7  10.5          1    5.1  10.5    1.2  1  NP_951605.1  DNA mismatch repair ATPase MutS-2 
+
+
+Domain annotation for each sequence (and alignments):
+>> NP_951095.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.0   0.2     2e-37   1.4e-34       1      81 [.       1      80 [.       1      97 [. 0.91
+   2 !  830.2  15.2  2.4e-253  1.6e-250      74     618 .]      99     635 ..      85     635 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 117.0 bits;  conditional E-value: 2e-37
+  ALIGN_hsp70  1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavsnPentiasikrkmGeedykvk 81
+                 m+k++GidlGttns++av+egg+p++i+naeG+rttPs+vaf++ ge+lvG+ akrqav+nPent+++ikr +G  +y  +
+  NP_951095.1  1 MSKVIGIDLGTTNSCVAVMEGGEPVVIANAEGSRTTPSMVAFAESGERLVGQQAKRQAVTNPENTLFAIKRLIG-RKYDTE 80
+                 79************************************************************************.555443 PP
+
+  == domain 2  score: 830.2 bits;  conditional E-value: 2.4e-253
+  ALIGN_hsp70  74 GeedykvklegkeytPqeisamilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvyd 171
+                  G  d  v+ +gk y   eisam+lqk+k+ ae+ylGe+v++avitvPayfnd+qrqatkdaG+iaGl+v riinePtaa+layGld ++kd+ki v+d
+  NP_951095.1  99 G--DAWVEARGKMYSAPEISAMVLQKMKQTAEDYLGETVTDAVITVPAYFNDSQRQATKDAGKIAGLNVLRIINEPTAAALAYGLD-KKKDEKIAVFD 193
+                  3..78899******************************************************************************.78999****** PP
+
+  ALIGN_hsp70 172 lGGGtldvsilelgggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhl 269
+                  lGGGt+d+silelg+gvfev+st+Gdt lGG+d+d+++id++adefkk++Gidlr dk+alqrlk+aaekak els+ +et+inlPfita++ gpkhl
+  NP_951095.1 194 LGGGTFDISILELGDGVFEVKSTNGDTFLGGEDFDQRVIDWIADEFKKDQGIDLRGDKMALQRLKEAAEKAKCELSTSMETDINLPFITADATGPKHL 291
+                  ************************************************************************************************** PP
+
+  ALIGN_hsp70 270 eldltrakleelvedlvertlaplekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkdivlldv 367
+                   ++l+rakle l  dl+++  +p ++al+da+ls+s++d+vilvGG trmPav++ v+e++Gk p+k+v+Pde+va+Gaaiq+gvl G+vkd++lldv
+  NP_951095.1 292 TMKLSRAKLEALCADLLNKLEGPCRTALKDAGLSPSEVDEVILVGGMTRMPAVQKRVQEIFGKVPNKGVNPDEVVAIGAAIQGGVLRGDVKDVLLLDV 389
+                  ************************************************************************************************** PP
+
+  ALIGN_hsp70 368 tPlslgietlGgvaerliernttiPtkkskvfttaadnqtsveihvlqGerelasenkslGrfkltgipPaPrGvPqievtfdidanGilnveakdlg 465
+                  tPlslgietlG+v+++lie+nttiP +ks+vf+ta+dnq++v+ihvlqGere+a +nk+lG+f+ltgipPaPrGvPqievtfdidanGi++v+akdlg
+  NP_951095.1 390 TPLSLGIETLGSVMTKLIEKNTTIPCRKSQVFSTASDNQPAVTIHVLQGEREMAIDNKTLGNFELTGIPPAPRGVPQIEVTFDIDANGIVHVSAKDLG 487
+                  ************************************************************************************************** PP
+
+  ALIGN_hsp70 466 tgkeqsitieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkealeekdaeeikaktea 563
+                  tgkeqsi i+as++ls+eei++m+k+ae+h+ edkk++e +e+rn+a++l +++ek l+e +dk+ +d+k+k+e+ + +l++a+e++d+e +k++t++
+  NP_951095.1 488 TGKEQSIRITASSGLSKEEIDKMVKEAEAHSAEDKKKRELVEARNHADTLSYSTEKSLKEYGDKIGADEKAKIEECLANLRKAMEGSDVEVLKKATDE 585
+                  ************************************************************************************************** PP
+
+  ALIGN_hsp70 564 lseevqeigtklyqkaaaeeaaaaegaggaagsgdakgedeevvdadyeevddek 618
+                  l+++ +++++++y ka+ae+a+    +gg +++g+a+ +de+vvdad+eev+d+k
+  NP_951095.1 586 LTQASHKLAEAVYAKAQAEGAQ----PGG-EAAGEASAKDEKVVDADFEEVKDDK 635
+                  **************88755433....333.333567788************9985 PP
+
+>> NP_953138.1  rod shape-determining protein MreB 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.9   3.4   5.4e-15   3.7e-12     114     218 ..     110     208 ..      13     331 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 42.9 bits;  conditional E-value: 5.4e-15
+  ALIGN_hsp70 114 kavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfevlstsGdtqlGGddldeaiid 211
+                  + vi vP+      ++a k++ e aG   + +i+eP aa++  Gl  +e + + ++ d+GGGt +v+++ l+g v          ++GGd +deai++
+  NP_953138.1 110 RIVICVPSGITQVEKRAVKESAESAGAREVYLIEEPMAAAIGAGLPITEASGN-MIVDIGGGTTEVAVISLAGIVLT-----KSVRVGGDKMDEAIVQ 201
+                  569*******************************************7777766.566**************998764.....34689*********** PP
+
+  ALIGN_hsp70 212 yladefk 218
+                  y+  +++
+  NP_953138.1 202 YIKRKYN 208
+                  **99886 PP
+
+>> NP_951790.1  rod shape-determining protein MreB 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.3     2e-09   1.4e-06     115     216 ..     110     205 ..     106     234 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 2e-09
+  ALIGN_hsp70 115 avitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfevlstsGdtqlGGddldeaiidy 212
+                   +i vPa    + r+ ++    +aG   + +++eP a ++  G d  +     lv d+GGGt +v+++   gg+  ++s      +GGd +d ai+ y
+  NP_951790.1 110 IIIGVPAGGSGRDRDNARAVARMAGAGEVYLMEEPLALAIGAGADAAD-LWGTLVVDVGGGTTEVALVAS-GGIQCLRS----VPVGGDAMDAAIVGY 201
+                  5899*****************************************554.5667899**********9864.56655555....579************ PP
+
+  ALIGN_hsp70 213 lade 216
+                  l  e
+  NP_951790.1 202 LERE 205
+                  9755 PP
+
+>> NP_951094.1  heat shock protein GrpE 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.7   1.7e-05     0.012     465     564 ..      26     122 ..      14     134 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.7e-05
+  ALIGN_hsp70 465 gtgkeqsi.tieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkealeekdaeeikakt 561
+                  + gk +++ ++ a++++ + e e   k+ae+ a+ dk  +e+ +++n    + ++ e+ll+  ++++     +++   ++++++al + d e++ a++
+  NP_951094.1  26 AQGKGEDVqSVAAEERIRQLETELAAKEAEAAANWDKFVRERADLENYRRRTQKEKEELLKYGNESLL----QDILPVVDSMERALGHADSESLSAVI 119
+                  44554444378899999999****************************99999999999998777665....56888899999999999999999988 PP
+
+  ALIGN_hsp70 562 eal 564
+                  e +
+  NP_951094.1 120 EGI 122
+                  876 PP
+
+>> NP_951605.1  DNA mismatch repair ATPase MutS-2 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1  10.5    0.0015         1     485     579 ..     540     634 ..     525     668 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0015
+  ALIGN_hsp70 485 iermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkealeekdaeeikaktealseevqeigtklyqka 579
+                   ++ +++ e+ ae ++ r++  e    a   + +ae+   ea +k+ ++ ke v+aa +d+++++ee   e+ +++ ++++e+   + +kl +  
+  NP_951605.1 540 KDQRRRHEEALAEAERLRRDAEEKARIARERLAEAETRRREATEKALQEAKEIVRAARRDVNAIIEEARREKSREARKKIDEAEAAVEAKLQEFH 634
+                  46667777888888888888888888899999999999999999999999999999999999999999988888888888887777777665544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       3430  (1151872 residues searched)
+Passed MSV filter:                       139  (0.0405248); expected 68.6 (0.02)
+Passed bias filter:                       77  (0.022449); expected 68.6 (0.02)
+Passed Vit filter:                        12  (0.00349854); expected 3.4 (0.001)
+Passed Fwd filter:                         5  (0.00145773); expected 0.0 (1e-05)
+Initial search space (Z):               3430  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.17u 0.02s 00:00:00.19 Elapsed: 00:00:00.09
+# Mc/sec: 7414.38
+//
+[ok]

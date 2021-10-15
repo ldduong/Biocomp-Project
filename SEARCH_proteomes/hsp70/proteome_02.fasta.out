@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ../BUILD_hsp70.hmm
+# target sequence database:        proteome_02.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ALIGN_hsp70  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+     0.0067   11.4   6.5     0.0083   11.2   6.5    1.1  1  WP_010867429.1  transcriptional regulator 
+  ------ inclusion threshold ------
+      0.014   10.4   3.6      0.015   10.3   3.6    1.1  1  WP_010868356.1  hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_010867429.1  transcriptional regulator 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   6.5   8.9e-06    0.0083     482     560 ..     117     196 ..     106     201 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 8.9e-06
+     ALIGN_hsp70 482 deeie.rmkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkealeekdaeeikak 560
+                      e i+ +m++ ae   e d++ ke ie + e e +   +e+ +e+   +++e++++++e+  ++++++l ++ a +ik+k
+  WP_010867429.1 117 TEPIDvKMRELAEFLHELDERIKEIIEEKRELEEVKILVETYIENVMRRMSEENRQTLEKIFKEIERILPKDYARRIKEK 196
+                     56676467888999999*****************************************************9999999987 PP
+
+>> WP_010868356.1  hypothetical protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   3.6   1.6e-05     0.015     513     580 ..       4      75 ..       1     117 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 1.6e-05
+     ALIGN_hsp70 513 esliqaaeklleeaedkvdedqkekveaaiedlkeale....ekdaeeikaktealseevqeigtklyqkaa 580
+                     e l + +e+l+ee + + +e++ e +e +++ +k+++e    +kd ++i   +++l  +v++i + l +  a
+  WP_010868356.1   4 EKLEKVVEELIEEIKSAKTEEEVEVLERKVKAVKKLIEayegDKDLDKIAMLMDKLGPMVEDILEPLQKLLA 75 
+                     56667899**************************99984444577899999999999888888665554443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       1862  (541041 residues searched)
+Passed MSV filter:                       120  (0.0644468); expected 37.2 (0.02)
+Passed bias filter:                       59  (0.0316864); expected 37.2 (0.02)
+Passed Vit filter:                         4  (0.00214823); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
+Initial search space (Z):               1862  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.05
+# Mc/sec: 6653.86
+//
+[ok]

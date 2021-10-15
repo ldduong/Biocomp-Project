@@ -13,8 +13,15 @@ echo "mcrA reference sequences concatenated"
 ./hmmbuild BUILD_mcrA.hmm ALIGN_mcrA.seqs
 
 #hmmsearch in the provided proteomes, one by one, for each gene
-for proteome in proteomes/proteome_*.fasta
+cd proteomes
+for proteome in *.fasta
 do
-./hmmsearch BUILD_hsp70.hmm proteomes/$proteome_*.fasta >SEARCH_proteome_$.txt
-echo "proteome_$.fasta searched"
+../hmmsearch ../BUILD_hsp70.hmm $proteome >../SEARCH_proteomes/hsp70/$proteome.out
+echo "$proteome searched for hsp70"
 done
+for proteome in *.fasta
+do
+../hmmsearch ../BUILD_mcrA.hmm $proteome >../SEARCH_proteomes/mcrA/$proteome.out
+echo "$proteome searched for mcrA"
+done
+
