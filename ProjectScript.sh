@@ -1,9 +1,26 @@
 #Usage: bash ProjectScript.sh
+#Fall 2021 Biocomputing class
+#Group: Loan Duong, Samir El Idrissi
+
+#Overall steps: 
+#1) Create concatenated file of the reference sequences for each gene. 
+#2) Use the muscle tool to make alignment files for each gene. 
+#3) Use hmmbuild tool to generate search images for each gene. 
+#4) Use hmmsearch to search for the previously generated search image within 
+#   each of the provided proteomes for each gene. Results are redircted to .out files. 
+#5) From the resultant files, pull out the number of matches for each gene within each proteome.
+#   Results of this are redirected to a new file that consists of the proteome #, followed by the
+#   number of matches. The number of matches is based on the "passed fwd filter" result of the
+#   hmmsearch. 
+#6) Final filtering. Filter the mcrA matches for only the proteomes with at least 1 match. 
+    Filter the hsp70 matches for only those with at least 3 matches. Send all this to a new text file,
+    and then sort and filter for those that have duplicates. These will be the proteomes that have passed
+    both filters. The results will be returned to stdout as well and sent to a text file. 
+
 
 #concatenate ref_sequences into 1 file for each gene
 cat ref_sequences/hsp* >REF_hsp70.fasta
 echo "hsp70 reference sequences concatenated"
-
 cat ref_sequences/mcr* >REF_mcrA.fasta
 echo "mcrA reference sequences concatenated"
 

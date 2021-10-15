@@ -31,7 +31,7 @@ Passed Vit filter:                        29  (0.00314261); expected 9.2 (0.001)
 Passed Fwd filter:                         0  (0); expected 0.1 (1e-05)
 Initial search space (Z):               9228  [actual number of targets]
 Domain search space  (domZ):               0  [number of targets reported over threshold]
-# CPU time: 0.18u 0.00s 00:00:00.18 Elapsed: 00:00:00.08
-# Mc/sec: 20501.76
+# CPU time: 0.22u 0.00s 00:00:00.22 Elapsed: 00:00:00.09
+# Mc/sec: 17050.70
 //
 [ok]
