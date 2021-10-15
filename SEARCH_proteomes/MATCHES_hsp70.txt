@@ -1,200 +1,50 @@
-# target sequence database:        proteome_01.fasta
-Passed Fwd filter:                         4  (0.00160901); expected 0.0 (1e-05)
-# target sequence database:        proteome_02.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_03.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_04.fasta
-Passed Fwd filter:                         4  (0.0014404); expected 0.0 (1e-05)
-# target sequence database:        proteome_05.fasta
-Passed Fwd filter:                         2  (0.000612557); expected 0.0 (1e-05)
-# target sequence database:        proteome_06.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_07.fasta
-Passed Fwd filter:                         2  (0.000795862); expected 0.0 (1e-05)
-# target sequence database:        proteome_08.fasta
-Passed Fwd filter:                         6  (0.00191022); expected 0.0 (1e-05)
-# target sequence database:        proteome_09.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_10.fasta
-Passed Fwd filter:                         3  (0.00211566); expected 0.0 (1e-05)
-# target sequence database:        proteome_11.fasta
-Passed Fwd filter:                         6  (0.00161943); expected 0.0 (1e-05)
-# target sequence database:        proteome_12.fasta
-Passed Fwd filter:                         6  (0.00130237); expected 0.0 (1e-05)
-# target sequence database:        proteome_13.fasta
-Passed Fwd filter:                         3  (0.000750939); expected 0.0 (1e-05)
-# target sequence database:        proteome_14.fasta
-Passed Fwd filter:                         3  (0.000783904); expected 0.0 (1e-05)
-# target sequence database:        proteome_15.fasta
-Passed Fwd filter:                         1  (0.000601685); expected 0.0 (1e-05)
-# target sequence database:        proteome_16.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_17.fasta
-Passed Fwd filter:                         4  (0.00224215); expected 0.0 (1e-05)
-# target sequence database:        proteome_18.fasta
-Passed Fwd filter:                         8  (0.00189618); expected 0.0 (1e-05)
-# target sequence database:        proteome_19.fasta
-Passed Fwd filter:                         1  (0.00035868); expected 0.0 (1e-05)
-# target sequence database:        proteome_20.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_21.fasta
-Passed Fwd filter:                         5  (0.00145773); expected 0.0 (1e-05)
-# target sequence database:        proteome_22.fasta
-Passed Fwd filter:                         9  (0.000975293); expected 0.1 (1e-05)
-# target sequence database:        proteome_23.fasta
-Passed Fwd filter:                         2  (0.00117716); expected 0.0 (1e-05)
-# target sequence database:        proteome_24.fasta
-Passed Fwd filter:                         2  (0.000599161); expected 0.0 (1e-05)
-# target sequence database:        proteome_25.fasta
-Passed Fwd filter:                         5  (0.00129769); expected 0.0 (1e-05)
-# target sequence database:        proteome_26.fasta
-Passed Fwd filter:                         1  (0.000658328); expected 0.0 (1e-05)
-# target sequence database:        proteome_27.fasta
-Passed Fwd filter:                         2  (0.000490798); expected 0.0 (1e-05)
-# target sequence database:        proteome_28.fasta
-Passed Fwd filter:                         1  (0.000405351); expected 0.0 (1e-05)
-# target sequence database:        proteome_29.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_30.fasta
-Passed Fwd filter:                         1  (0.000284495); expected 0.0 (1e-05)
-# target sequence database:        proteome_31.fasta
-Passed Fwd filter:                         7  (0.00204439); expected 0.0 (1e-05)
-# target sequence database:        proteome_32.fasta
-Passed Fwd filter:                         4  (0.00160901); expected 0.0 (1e-05)
-# target sequence database:        proteome_33.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_34.fasta
-Passed Fwd filter:                         3  (0.000783904); expected 0.0 (1e-05)
-# target sequence database:        proteome_35.fasta
-Passed Fwd filter:                         1  (0.000658328); expected 0.0 (1e-05)
-# target sequence database:        proteome_36.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_37.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_38.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_39.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_40.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_41.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_42.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_43.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_44.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_45.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_46.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_47.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_48.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_49.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_50.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_01.fasta
-Passed Fwd filter:                         4  (0.00160901); expected 0.0 (1e-05)
-# target sequence database:        proteome_02.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_03.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_04.fasta
-Passed Fwd filter:                         4  (0.0014404); expected 0.0 (1e-05)
-# target sequence database:        proteome_05.fasta
-Passed Fwd filter:                         2  (0.000612557); expected 0.0 (1e-05)
-# target sequence database:        proteome_06.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_07.fasta
-Passed Fwd filter:                         2  (0.000795862); expected 0.0 (1e-05)
-# target sequence database:        proteome_08.fasta
-Passed Fwd filter:                         6  (0.00191022); expected 0.0 (1e-05)
-# target sequence database:        proteome_09.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_10.fasta
-Passed Fwd filter:                         3  (0.00211566); expected 0.0 (1e-05)
-# target sequence database:        proteome_11.fasta
-Passed Fwd filter:                         6  (0.00161943); expected 0.0 (1e-05)
-# target sequence database:        proteome_12.fasta
-Passed Fwd filter:                         6  (0.00130237); expected 0.0 (1e-05)
-# target sequence database:        proteome_13.fasta
-Passed Fwd filter:                         3  (0.000750939); expected 0.0 (1e-05)
-# target sequence database:        proteome_14.fasta
-Passed Fwd filter:                         3  (0.000783904); expected 0.0 (1e-05)
-# target sequence database:        proteome_15.fasta
-Passed Fwd filter:                         1  (0.000601685); expected 0.0 (1e-05)
-# target sequence database:        proteome_16.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_17.fasta
-Passed Fwd filter:                         4  (0.00224215); expected 0.0 (1e-05)
-# target sequence database:        proteome_18.fasta
-Passed Fwd filter:                         8  (0.00189618); expected 0.0 (1e-05)
-# target sequence database:        proteome_19.fasta
-Passed Fwd filter:                         1  (0.00035868); expected 0.0 (1e-05)
-# target sequence database:        proteome_20.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_21.fasta
-Passed Fwd filter:                         5  (0.00145773); expected 0.0 (1e-05)
-# target sequence database:        proteome_22.fasta
-Passed Fwd filter:                         9  (0.000975293); expected 0.1 (1e-05)
-# target sequence database:        proteome_23.fasta
-Passed Fwd filter:                         2  (0.00117716); expected 0.0 (1e-05)
-# target sequence database:        proteome_24.fasta
-Passed Fwd filter:                         2  (0.000599161); expected 0.0 (1e-05)
-# target sequence database:        proteome_25.fasta
-Passed Fwd filter:                         5  (0.00129769); expected 0.0 (1e-05)
-# target sequence database:        proteome_26.fasta
-Passed Fwd filter:                         1  (0.000658328); expected 0.0 (1e-05)
-# target sequence database:        proteome_27.fasta
-Passed Fwd filter:                         2  (0.000490798); expected 0.0 (1e-05)
-# target sequence database:        proteome_28.fasta
-Passed Fwd filter:                         1  (0.000405351); expected 0.0 (1e-05)
-# target sequence database:        proteome_29.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_30.fasta
-Passed Fwd filter:                         1  (0.000284495); expected 0.0 (1e-05)
-# target sequence database:        proteome_31.fasta
-Passed Fwd filter:                         7  (0.00204439); expected 0.0 (1e-05)
-# target sequence database:        proteome_32.fasta
-Passed Fwd filter:                         4  (0.00160901); expected 0.0 (1e-05)
-# target sequence database:        proteome_33.fasta
-Passed Fwd filter:                         0  (0); expected 0.0 (1e-05)
-# target sequence database:        proteome_34.fasta
-Passed Fwd filter:                         3  (0.000783904); expected 0.0 (1e-05)
-# target sequence database:        proteome_35.fasta
-Passed Fwd filter:                         1  (0.000658328); expected 0.0 (1e-05)
-# target sequence database:        proteome_36.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_37.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_38.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_39.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_40.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_41.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_42.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_43.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_44.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_45.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
-# target sequence database:        proteome_46.fasta
-Passed Fwd filter:                         3  (0.00161117); expected 0.0 (1e-05)
-# target sequence database:        proteome_47.fasta
-Passed Fwd filter:                         1  (0.000416146); expected 0.0 (1e-05)
-# target sequence database:        proteome_48.fasta
-Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
-# target sequence database:        proteome_49.fasta
-Passed Fwd filter:                         4  (0.00103708); expected 0.0 (1e-05)
-# target sequence database:        proteome_50.fasta
-Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
+proteome_01   4 
+proteome_02   3 
+proteome_03   3 
+proteome_04   4 
+proteome_05   2 
+proteome_06   0 
+proteome_07   2 
+proteome_08   6 
+proteome_09   1 
+proteome_10   3 
+proteome_11   6 
+proteome_12   6 
+proteome_13   3 
+proteome_14   3 
+proteome_15   1 
+proteome_16   1 
+proteome_17   4 
+proteome_18   8 
+proteome_19   1 
+proteome_20   4 
+proteome_21   5 
+proteome_22   9 
+proteome_23   2 
+proteome_24   2 
+proteome_25   5 
+proteome_26   1 
+proteome_27   2 
+proteome_28   1 
+proteome_29   0 
+proteome_30   1 
+proteome_31   7 
+proteome_32   4 
+proteome_33   0 
+proteome_34   3 
+proteome_35   1 
+proteome_36   4 
+proteome_37   1 
+proteome_38   1 
+proteome_39   1 
+proteome_40   3 
+proteome_41   1 
+proteome_42   3 
+proteome_43   4 
+proteome_44   1 
+proteome_45   3 
+proteome_46   3 
+proteome_47   1 
+proteome_48   1 
+proteome_49   4 
+proteome_50   3 
