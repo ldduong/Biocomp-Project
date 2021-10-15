@@ -1,6 +1,9 @@
+#Usage: bash ProjectScript.sh
+
 #concatenate ref_sequences into 1 file for each gene
 cat ref_sequences/hsp* >REF_hsp70.fasta
 echo "hsp70 reference sequences concatenated"
+sort tempFilter.txt | uniq -d
 cat ref_sequences/mcr* >REF_mcrA.fasta
 echo "mcrA reference sequences concatenated"
 
@@ -56,9 +59,18 @@ rm temp*
 
 echo "See matches in proteomes for mcrA in SEARCH_proteomes/MATCHES_mcrA.txt"
 
-#filtering: return which proteomes have at least 1 mcrA and more than 5 hsp70 copies
-grep -E " [1-9]" MATCHES_mcrA.txt > ../FILTER_mcrA.txt
+#filtering: return which proteomes have at least 1 mcrA and more than 3 hsp70 copies
+grep -E " [1-9]" MATCHES_mcrA.txt > FILTER_mcrA.txt
 echo "see FILTER_mcrA.txt for proteomes with at least copy of mcrA"
-grep -E " [3-9]" MATCHES_hsp70.txt > ../FILTER_hsp70.txt
+grep -E " [3-9]" MATCHES_hsp70.txt > FILTER_hsp70.txt
 echo "see FILTER_hsp.txt for proteomes with at least 3 copies of hsp70"
+cat FILTER_mcrA.txt >tempFilter.txt
+cat FILTER_hsp70.txt >>tempFilter.txt
+echo "*************************RESULTS****************************************
+These are the proteomes we recommend the student move forward with. 
+They are methanogenes in that they have at least one copy of mcrA and 
+they demonstrate pH resistance in that they have at least 3 copies of HSP70.
+This result is also printed in RecommendedProteomes.txt"
+cat tempFilter.txt | sort | cut -d ' ' -f 1 | uniq -d
+cat tempFilter.txt | sort | cut -d ' ' -f 1 | uniq -d > ../RecommendedProteomes.txt
 
