@@ -56,4 +56,9 @@ rm temp*
 
 echo "See matches in proteomes for mcrA in SEARCH_proteomes/MATCHES_mcrA.txt"
 
+#filtering: return which proteomes have at least 1 mcrA and more than 5 hsp70 copies
+grep -E " [1-9]" MATCHES_mcrA.txt > ../FILTER_mcrA.txt
+echo "see FILTER_mcrA.txt for proteomes with at least copy of mcrA"
+grep -E " [3-9]" MATCHES_hsp70.txt > ../FILTER_hsp70.txt
+echo "see FILTER_hsp.txt for proteomes with at least 3 copies of hsp70"
 
