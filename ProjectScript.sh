@@ -13,9 +13,9 @@
 #   number of matches. The number of matches is based on the "passed fwd filter" result of the
 #   hmmsearch. 
 #6) Final filtering. Filter the mcrA matches for only the proteomes with at least 1 match. 
-    Filter the hsp70 matches for only those with at least 3 matches. Send all this to a new text file,
-    and then sort and filter for those that have duplicates. These will be the proteomes that have passed
-    both filters. The results will be returned to stdout as well and sent to a text file. 
+#   Filter the hsp70 matches for only those with at least 3 matches. Send all this to a new text file,
+#   and then sort and filter for those that have duplicates. These will be the proteomes that have passed
+#   both filters. The results will be returned to stdout as well and sent to a text file. 
 
 
 #concatenate ref_sequences into 1 file for each gene
@@ -38,13 +38,13 @@ for proteome in *.fasta
 do
 ../hmmsearch ../BUILD_hsp70.hmm $proteome >../SEARCH_proteomes/hsp70/$proteome.out
 done
-echo "all proteomes searched for hsp70"
+echo "All proteomes have been searched for hsp70."
 
 for proteome in *.fasta
 do
 ../hmmsearch ../BUILD_mcrA.hmm $proteome >../SEARCH_proteomes/mcrA/$proteome.out
 done
-echo "all proteomes searched for mcrA"
+echo "All proteomes have been searched for mcrA."
 
 #search through previous resultant files for the number of matches that passed the fwd filter
 cd ../SEARCH_proteomes/hsp70
@@ -57,9 +57,11 @@ done
 cd ..
 grep -E -o "proteome_[0-9]*" tempMATCHES_hsp70.txt > temp_hsp70_proteomenumbers
 grep -E -o " [0-9] " tempMATCHES_hsp70.txt > temp_hsp70_matchnumbers
-paste temp_hsp70_proteomenumbers temp_hsp70_matchnumbers | column -s $'\t' -t > hsp70/MATCHES_hsp70.txt
+echo 'Number of matches for hsp70 within each proteome'>hsp70/MATCHES_hsp70.txt
+paste temp_hsp70_proteomenumbers temp_hsp70_matchnumbers | column -s $'\t' -t >> hsp70/MATCHES_hsp70.txt
 rm temp*
-echo "See matches in proteomes for hsp70 in SEARCH_proteomes/hsp70/MATCHES_hsp70.txt"
+cp hsp70/MATCHES_hsp70.txt ../SummaryMatches_hsp70.txt
+echo "See matches in proteomes for hsp70 in SummaryMatches_hsp70.txt"
 
 cd mcrA
 
@@ -71,32 +73,34 @@ done
 cd ..
 grep -E -o "proteome_[0-9]*" tempMATCHES_mcrA.txt > temp_mcrA_proteomenumbers
 grep -E -o " [0-9] " tempMATCHES_mcrA.txt > temp_mcrA_matchnumbers
-paste temp_mcrA_proteomenumbers temp_mcrA_matchnumbers | column -s $'\t' -t > mcrA/MATCHES_mcrA.txt
+echo 'Number of matches for mcrA within each proteome'>mcrA/MATCHES_mcrA.txt
+paste temp_mcrA_proteomenumbers temp_mcrA_matchnumbers | column -s $'\t' -t >> mcrA/MATCHES_mcrA.txt
 rm temp*
-echo "See matches in proteomes for mcrA in SEARCH_proteomes/mcrA/MATCHES_mcrA.txt"
+cp mcrA/MATCHES_mcrA.txt ../SummaryMatches_mcrA.txt
+echo "See matches in proteomes for mcrA in SummaryMatches_mcrA.txt"
+
 
 #filtering: return which proteomes have at least 1 mcrA and more than 3 hsp70 copies
 grep -E " [1-9]" mcrA/MATCHES_mcrA.txt > mcrA/FILTER_mcrA.txt
-echo "see SEARCH_proteomes/mcrA/FILTER_mcrA.txt for proteomes with at least copy of mcrA"
 grep -E " [3-9]" hsp70/MATCHES_hsp70.txt > hsp70/FILTER_hsp70.txt
-echo "see SEARCH_proteomes/hsp70/FILTER_hsp.txt for proteomes with at least 3 copies of hsp70"
 cat mcrA/FILTER_mcrA.txt >tempFilter.txt
 cat hsp70/FILTER_hsp70.txt >>tempFilter.txt
-rm ../RecommendedProteomes.txt
-echo "******************************RESULTS************************************
-*******************************************************************************
-These are the proteomes we recommend the student move forward with. 
-They are methanogens in that they have at least one copy of mcrA and 
-they demonstrate pH resistance in that they have at least 3 copies of HSP70.
-This result is also printed in RecommendedProteomes.txt"
+rm ../CandidateProteomes.txt
+echo "******************************RESULTS******************************************
+*************************************************************************************
+These are the candidate pH-resistant methanogen proteomes we recommend the student 
+move forward with. They are methanogens in that they have at least one copy of 
+mcrA and they demonstrate pH resistance in that they have at least 3 copies of HSP70.
+This result is also printed in CandidateProteomes.txt. The summary tables have
+been generated into SummaryMatches_hsp70.txt and SummaryMatches_mcrA.txt."
 cat tempFilter.txt | sort | cut -d ' ' -f 1 | uniq -d
 
 echo 'These are the proteomes we recommend the student move forward with.
 They are methanogens in that they have at least one copy of mcrA and
-they demonstrate pH resistance in that they have at least 3 copies of HSP70.'>../RecommendedProteomes.txt
+they demonstrate pH resistance in that they have at least 3 copies of HSP70.'>../CandidateProteomes.txt
 
-cat tempFilter.txt | sort | cut -d ' ' -f 1 | uniq -d >> ../RecommendedProteomes.txt
-echo "**********************END RESULT****************************************
+cat tempFilter.txt | sort | cut -d ' ' -f 1 | uniq -d >> ../CandidateProteomes.txt
+echo "******************************END RESULT****************************************
 Biocomputing Fall 2021
 Group members: Loan Duong, Samir El Idrissi"
 rm temp*
